@@ -1,10 +1,12 @@
 import React from 'react'
 import { Button } from '../components/Button/Button'
+import { Display } from '../components/Display/Display'
 import './Calculator.css'
 
 export function Calculator() {
   return (
     <div className='calculator'>
+       <Display value={100} />
        <Button label="AC" />
        <Button label="/" />
        <Button label="7" />

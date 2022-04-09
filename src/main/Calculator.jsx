@@ -1,29 +1,25 @@
 import React from 'react'
-import { Button } from '../components/Button/Button'
+import { Keypad } from '../components/Keypad/Keypad'
 import { Display } from '../components/Display/Display'
 import './Calculator.css'
 
 export function Calculator() {
+   function manageInput(button) {
+      if (button === "=") {
+         console.log('=')
+      } else if (button === "AC") {
+         console.log('ac')
+      } else if (button === "+") {
+         console.log('+')
+      } else if (button === "-") {
+         console.log('-')
+      }
+   }
+   
   return (
     <div className='calculator'>
        <Display value={100} />
-       <Button label="AC" />
-       <Button label="/" />
-       <Button label="7" />
-       <Button label="8" />
-       <Button label="9" />
-       <Button label="X" />
-       <Button label="4" />
-       <Button label="5" />
-       <Button label="6" />
-       <Button label="-" />
-       <Button label="1" />
-       <Button label="2" />
-       <Button label="3" />
-       <Button label="+" />
-       <Button label="0" />
-       <Button label="." />
-       <Button label="=" />
+       <Keypad onClick={manageInput} />
     </div>
   )
 }

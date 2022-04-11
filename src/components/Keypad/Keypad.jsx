@@ -10,7 +10,7 @@ export function Keypad(props) {
       <button name='8' onClick={e => props.onClick(e.target.name)}>8</button>
 
       <button name='9' onClick={e => props.onClick(e.target.name)}>9</button>
-      <button name='*' className='operation' onClick={e => props.onClick(e.target.name)}>X</button>
+      <button name='*' className='operation' onClick={e => props.onClick(e.target.name)}>x</button>
       <button name='4' onClick={e => props.onClick(e.target.name)}>4</button>
       <button name='5' onClick={e => props.onClick(e.target.name)}>5</button>
 
